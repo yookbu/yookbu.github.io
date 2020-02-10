@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yookbu.xyz/tags/index.html</loc>
-    
-    <lastmod>2020-02-10T08:33:21.665Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yookbu.xyz/categories/index.html</loc>
     
-    <lastmod>2020-02-10T08:33:13.158Z</lastmod>
+    <lastmod>2020-02-10T09:15:35.588Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yookbu.xyz/about/index.html</loc>
     
-    <lastmod>2020-02-10T08:32:59.073Z</lastmod>
+    <lastmod>2020-02-10T09:15:20.814Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yookbu.xyz/tags/index.html</loc>
+    
+    <lastmod>2020-02-10T08:33:21.665Z</lastmod>
     
   </url>
   
