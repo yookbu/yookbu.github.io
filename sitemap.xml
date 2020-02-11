@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yookbu.xyz/music/index.html</loc>
+    
+    <lastmod>2020-02-11T16:34:47.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yookbu.xyz/link/index.html</loc>
+    
+    <lastmod>2020-02-11T15:24:23.251Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2020-02-10T16:08:23.262Z</lastmod>
