@@ -5,9 +5,9 @@
   <subtitle>为时已晚的时候，恰恰是最早的时候</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yookbu.xyz/"/>
+  <link href="http://www.yookbu.xyz/"/>
   <updated>2020-02-14T09:50:43.692Z</updated>
-  <id>http://yookbu.xyz/</id>
+  <id>http://www.yookbu.xyz/</id>
   
   <author>
     <name>yookbu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows系统重装教程</title>
-    <link href="http://yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <id>http://yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <link href="http://www.yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://www.yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/</id>
     <published>2020-02-14T00:38:25.000Z</published>
     <updated>2020-02-14T09:50:43.692Z</updated>
     
@@ -37,14 +37,14 @@
     
     
     
-      <category term="系统重装" scheme="http://yookbu.xyz/tags/%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/"/>
+      <category term="系统重装" scheme="http://www.yookbu.xyz/tags/%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/"/>
     
   </entry>
   
   <entry>
     <title>如何免费给你的域名配置Sll证书，实现https访问</title>
-    <link href="http://yookbu.xyz/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%BB%99%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AESll%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/"/>
-    <id>http://yookbu.xyz/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%BB%99%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AESll%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/</id>
+    <link href="http://www.yookbu.xyz/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%BB%99%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AESll%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/"/>
+    <id>http://www.yookbu.xyz/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E7%BB%99%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AESll%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/</id>
     <published>2020-02-10T15:39:06.000Z</published>
     <updated>2020-02-10T15:47:29.155Z</updated>
     
@@ -61,16 +61,16 @@
     
     
     
-      <category term="hexo" scheme="http://yookbu.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
     
-      <category term="https配置" scheme="http://yookbu.xyz/tags/https%E9%85%8D%E7%BD%AE/"/>
+      <category term="https配置" scheme="http://www.yookbu.xyz/tags/https%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客上华为云</title>
-    <link href="http://yookbu.xyz/hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BA%91%E5%8D%8E%E4%B8%BA%E4%BA%91/"/>
-    <id>http://yookbu.xyz/hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BA%91%E5%8D%8E%E4%B8%BA%E4%BA%91/</id>
+    <link href="http://www.yookbu.xyz/hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BA%91%E5%8D%8E%E4%B8%BA%E4%BA%91/"/>
+    <id>http://www.yookbu.xyz/hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BA%91%E5%8D%8E%E4%B8%BA%E4%BA%91/</id>
     <published>2020-02-08T15:39:06.000Z</published>
     <updated>2020-02-10T15:53:26.540Z</updated>
     
@@ -87,14 +87,14 @@
     
     
     
-      <category term="hexo迁移至云端" scheme="http://yookbu.xyz/tags/hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E4%BA%91%E7%AB%AF/"/>
+      <category term="hexo迁移至云端" scheme="http://www.yookbu.xyz/tags/hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E4%BA%91%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>Hexo删除步骤</title>
-    <link href="http://yookbu.xyz/hexo%E5%88%A0%E9%99%A4%E6%AD%A5%E9%AA%A4/"/>
-    <id>http://yookbu.xyz/hexo%E5%88%A0%E9%99%A4%E6%AD%A5%E9%AA%A4/</id>
+    <link href="http://www.yookbu.xyz/hexo%E5%88%A0%E9%99%A4%E6%AD%A5%E9%AA%A4/"/>
+    <id>http://www.yookbu.xyz/hexo%E5%88%A0%E9%99%A4%E6%AD%A5%E9%AA%A4/</id>
     <published>2020-02-05T13:37:09.000Z</published>
     <updated>2020-02-10T15:57:13.648Z</updated>
     
@@ -111,14 +111,14 @@
     
     
     
-      <category term="hexo删除" scheme="http://yookbu.xyz/tags/hexo%E5%88%A0%E9%99%A4/"/>
+      <category term="hexo删除" scheme="http://www.yookbu.xyz/tags/hexo%E5%88%A0%E9%99%A4/"/>
     
   </entry>
   
   <entry>
     <title>Linux 文件的基本操作</title>
-    <link href="http://yookbu.xyz/Linux%20%E6%96%87%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yookbu.xyz/Linux%20%E6%96%87%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</id>
+    <link href="http://www.yookbu.xyz/Linux%20%E6%96%87%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    <id>http://www.yookbu.xyz/Linux%20%E6%96%87%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</id>
     <published>2020-02-05T13:37:09.000Z</published>
     <updated>2020-02-10T16:07:29.451Z</updated>
     
@@ -135,16 +135,16 @@
     
     
     
-      <category term="linux" scheme="http://yookbu.xyz/tags/linux/"/>
+      <category term="linux" scheme="http://www.yookbu.xyz/tags/linux/"/>
     
-      <category term="linux文件操作" scheme="http://yookbu.xyz/tags/linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
+      <category term="linux文件操作" scheme="http://www.yookbu.xyz/tags/linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>Hexo第三方服务安装总结</title>
-    <link href="http://yookbu.xyz/hexo%E7%AC%AC%E4%B8%89%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E6%80%BB%E7%BB%93/"/>
-    <id>http://yookbu.xyz/hexo%E7%AC%AC%E4%B8%89%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E6%80%BB%E7%BB%93/</id>
+    <link href="http://www.yookbu.xyz/hexo%E7%AC%AC%E4%B8%89%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.yookbu.xyz/hexo%E7%AC%AC%E4%B8%89%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E6%80%BB%E7%BB%93/</id>
     <published>2020-02-05T13:37:09.000Z</published>
     <updated>2020-02-10T15:54:04.212Z</updated>
     
@@ -161,14 +161,14 @@
     
     
     
-      <category term="hexo美化" scheme="http://yookbu.xyz/tags/hexo%E7%BE%8E%E5%8C%96/"/>
+      <category term="hexo美化" scheme="http://www.yookbu.xyz/tags/hexo%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Python里list，set，dict和tuple</title>
-    <link href="http://yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/"/>
-    <id>http://yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/</id>
+    <link href="http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/"/>
+    <id>http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/</id>
     <published>2020-02-03T15:29:56.000Z</published>
     <updated>2020-02-10T16:02:17.300Z</updated>
     
@@ -185,14 +185,14 @@
     
     
     
-      <category term="python" scheme="http://yookbu.xyz/tags/python/"/>
+      <category term="python" scheme="http://www.yookbu.xyz/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Windows+hexo+github打造你的个人博客</title>
-    <link href="http://yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-02-03T15:29:56.000Z</published>
     <updated>2020-02-10T16:03:23.564Z</updated>
     
@@ -209,14 +209,14 @@
     
     
     
-      <category term="hexo" scheme="http://yookbu.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Python学习指导</title>
-    <link href="http://yookbu.xyz/python%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%AF%BC/"/>
-    <id>http://yookbu.xyz/python%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%AF%BC/</id>
+    <link href="http://www.yookbu.xyz/python%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%AF%BC/"/>
+    <id>http://www.yookbu.xyz/python%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%AF%BC/</id>
     <published>2020-02-03T15:29:56.000Z</published>
     <updated>2020-02-03T15:31:13.000Z</updated>
     
@@ -233,14 +233,14 @@
     
     
     
-      <category term="python" scheme="http://yookbu.xyz/tags/python/"/>
+      <category term="python" scheme="http://www.yookbu.xyz/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Python-从入门到精通</title>
-    <link href="http://yookbu.xyz/python-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/"/>
-    <id>http://yookbu.xyz/python-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</id>
+    <link href="http://www.yookbu.xyz/python-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/"/>
+    <id>http://www.yookbu.xyz/python-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</id>
     <published>2020-02-03T15:29:34.000Z</published>
     <updated>2020-02-03T15:31:41.000Z</updated>
     
@@ -257,14 +257,14 @@
     
     
     
-      <category term="python" scheme="http://yookbu.xyz/tags/python/"/>
+      <category term="python" scheme="http://www.yookbu.xyz/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Mac删除. .. .DS_Store文件且永不再生成</title>
-    <link href="http://yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/"/>
-    <id>http://yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/</id>
+    <link href="http://www.yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/"/>
+    <id>http://www.yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/</id>
     <published>2019-11-02T07:33:47.000Z</published>
     <updated>2020-02-10T16:01:08.234Z</updated>
     
@@ -281,14 +281,14 @@
     
     
     
-      <category term="mac" scheme="http://yookbu.xyz/tags/mac/"/>
+      <category term="mac" scheme="http://www.yookbu.xyz/tags/mac/"/>
     
   </entry>
   
   <entry>
     <title>Linux填坑之旅</title>
-    <link href="http://yookbu.xyz/linux%E5%A1%AB%E5%9D%91%E4%B9%8B%E6%97%85/"/>
-    <id>http://yookbu.xyz/linux%E5%A1%AB%E5%9D%91%E4%B9%8B%E6%97%85/</id>
+    <link href="http://www.yookbu.xyz/linux%E5%A1%AB%E5%9D%91%E4%B9%8B%E6%97%85/"/>
+    <id>http://www.yookbu.xyz/linux%E5%A1%AB%E5%9D%91%E4%B9%8B%E6%97%85/</id>
     <published>2019-11-02T07:33:47.000Z</published>
     <updated>2020-02-10T16:00:03.674Z</updated>
     
@@ -305,14 +305,14 @@
     
     
     
-      <category term="linux" scheme="http://yookbu.xyz/tags/linux/"/>
+      <category term="linux" scheme="http://www.yookbu.xyz/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Mac系统下搭建hexo博客</title>
-    <link href="http://yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://www.yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</id>
     <published>2019-11-02T07:33:47.000Z</published>
     <updated>2020-02-10T16:08:23.262Z</updated>
     
@@ -329,9 +329,9 @@
     
     
     
-      <category term="mac" scheme="http://yookbu.xyz/tags/mac/"/>
+      <category term="mac" scheme="http://www.yookbu.xyz/tags/mac/"/>
     
-      <category term="hexo" scheme="http://yookbu.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
     
   </entry>
   
