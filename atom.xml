@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yookbu.xyz/"/>
-  <updated>2020-03-01T14:13:06.993Z</updated>
+  <updated>2020-03-03T10:07:48.744Z</updated>
   <id>http://www.yookbu.xyz/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows安装配置Mysql</title>
+    <link href="http://www.yookbu.xyz/Windows%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEMysql/"/>
+    <id>http://www.yookbu.xyz/Windows%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEMysql/</id>
+    <published>2020-03-03T11:03:24.000Z</published>
+    <updated>2020-03-03T10:07:48.744Z</updated>
+    
+    <content type="html"><![CDATA[<p>小Y为了成为一个合格的程序猿，数据库还不会岂不是说不过去，在一个阳光明媚的下午，他开始了学习数据库的第一步——安装数据库</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">angelscript</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">小Y的环境：Windows10 -v1909+Mysql<span class="number">-8.0</span><span class="number">.19</span>=Mysql<span class="number">-8.0</span><span class="number">-19</span>-winx64</span><br></pre></td></tr></table></figure></div><h3 id="一：下载Mysql"><a href="#一：下载Mysql" class="headerlink" title="一：下载Mysql"></a>一：下载Mysql</h3><p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">点击下载MySQL</a>的压缩包</p><p>别忘了校检MD5(不校检也没啥事(●ˇ∀ˇ●))</p><p>!<a href="blog.yookbu.xyz/20200303162608.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-src="blog.yookbu.xyz/20200303162608.png" class="lazyload"></a></p><h3 id="二：安装Mysql"><a href="#二：安装Mysql" class="headerlink" title="二：安装Mysql"></a>二：安装Mysql</h3><ol><li><h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><p>把下载的安装包解压到一个文件夹下（比如路径为D:\mysql）</p></li><li><h4 id="新建配置文件"><a href="#新建配置文件" class="headerlink" title="新建配置文件"></a>新建配置文件</h4><p>进入该文件夹，创建my.ini配置文件（示例路径D:\mysql\my.ini）</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">routeros</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line"><span class="comment"># 设置mysql客户端默认字符集</span></span><br><span class="line"><span class="attribute">default-character-set</span>=utf8</span><br><span class="line"> </span><br><span class="line">[mysqld]</span><br><span class="line"><span class="comment"># 设置3306端口</span></span><br><span class="line">port = 3306</span><br><span class="line"><span class="comment"># 设置mysql的安装目录</span></span><br><span class="line"><span class="attribute">basedir</span>=D:\mysql-8.0.19-winx64</span><br><span class="line"><span class="comment"># 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错</span></span><br><span class="line"><span class="comment"># datadir=C:\\web\\sqldata</span></span><br><span class="line"><span class="comment"># 允许最大连接数</span></span><br><span class="line"><span class="attribute">max_connections</span>=20</span><br><span class="line"><span class="comment"># 服务端使用的字符集默认为8比特编码的latin1字符集</span></span><br><span class="line"><span class="attribute">character-set-server</span>=utf8</span><br><span class="line"><span class="comment"># 创建新表时将使用的默认存储引擎</span></span><br><span class="line"><span class="attribute">default-storage-engine</span>=INNODB</span><br></pre></td></tr></table></figure></div></li></ol><ol start="3"><li><h3 id="解压-1"><a href="#解压-1" class="headerlink" title="解压"></a>解压</h3><p>打开命令提示符（CMD），使用cd命令把当前路径切换到刚刚解压的文件夹下的bin目录，要用管理员身份运行 ！<a href="blog.yookbu.xyz/mysql.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-src="blog.yookbu.xyz/mysql.gif" class="lazyload"></a></p></li><li><h4 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h4><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">brainfuck</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">mysqld</span> --<span class="comment">initialize</span> --<span class="comment">console</span></span><br></pre></td></tr></table></figure></div><p> 初始化数据库(<strong>要记住root@localhost:后面的一串 yy7ELpkj?&lt;6) 就是初始密码（不含首位空格），在没有更改密码前，需要记住这个密码，复制保存，后续登录需要用到！</strong>)</p><p>！<a href="blog.yookbu.xyz/20200303171508.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-src="blog.yookbu.xyz/20200303171508.png" class="lazyload"></a></p></li><li><h4 id="安装Mysql服务"><a href="#安装Mysql服务" class="headerlink" title="安装Mysql服务"></a>安装Mysql服务</h4><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">jboss-cli</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">默认设置：如果不想改服务名，输入mysqld <span class="params">--install</span>即可</span><br><span class="line">自定义设置：mysqld <span class="params">--install</span>[服务名]<span class="string">//</span>如果你需要多个mysql服务，你就可以设置不同的服务名以区分。比如mysql1，mysql2</span><br></pre></td></tr></table></figure></div></li><li><h4 id="启动-停止-卸载Mysql"><a href="#启动-停止-卸载Mysql" class="headerlink" title="启动/停止/卸载Mysql"></a>启动/停止/卸载Mysql</h4><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">angelscript</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">net start mysql               <span class="comment">//启动mysql，如果上一步服务名自己改了，那么这一步也输入你改的服务名</span></span><br><span class="line">net stop mysql                <span class="comment">//停止mysql</span></span><br><span class="line">sc delete MySQL/mysqld -remove  <span class="comment">//卸载mysql服务</span></span><br><span class="line"></span><br><span class="line">D:\mysql<span class="number">-8.0</span><span class="number">.19</span>-winx64\bin&gt;mysqld --install</span><br><span class="line">Service successfully installed.</span><br><span class="line"></span><br><span class="line">D:\mysql<span class="number">-8.0</span><span class="number">.19</span>-winx64\bin&gt;</span><br><span class="line">D:\mysql<span class="number">-8.0</span><span class="number">.19</span>-winx64\bin&gt;net start mysql</span><br><span class="line">MySQL 服务正在启动 .</span><br><span class="line">MySQL 服务已经启动成功。</span><br></pre></td></tr></table></figure></div></li></ol><ol start="7"><li><h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>右键点击我的电脑→属性→高级系统设置→环境变量→在系统变量里找到PATH，双击打开，把mysql的bin目录的路径添加进去，然后点击确定退出（<strong>注意：需要点击3次确定</strong>）</p><p>！<a href="blog.yookbu.xyz/20200303175120.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-src="blog.yookbu.xyz/20200303175120.png" class="lazyload"></a></p></li><li><h4 id="登录Mysql"><a href="#登录Mysql" class="headerlink" title="登录Mysql"></a>登录Mysql</h4><p>使用初始密码登录mysql，命令为</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">ebnf</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysql -u root -p</span></span><br></pre></td></tr></table></figure></div><p>回车之后会提示输入密码，这时复制之前记住的初始密码登录</p></li><li><h4 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h4><p>使用<code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;新密码&#39;;</code></p><p>!<a href="blog.yookbu.xyz/20200303175809.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-src="blog.yookbu.xyz/20200303175809.png" class="lazyload"></a></p><p>至此，安装配置MySQL就结束啦(<em>^▽^</em>)</p></li></ol><p>enjoy <del>~</del></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;小Y为了成为一个合格的程序猿，数据库还不会岂不是说不过去，在一个阳光明媚的下午，他开始了学习数据库的第一步——安装数据库&lt;/p&gt;
+&lt;div class=&quot;code-area-wrap&quot;&gt;&lt;div class=&quot;highlight-tools&quot;&gt;&lt;i class=&quot;fa fa
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Mysql" scheme="http://www.yookbu.xyz/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重装系统后，我是怎么样快速恢复我的Hexo博客的</title>
+    <link href="http://www.yookbu.xyz/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%EF%BC%8C%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E6%A0%B7%E5%BF%AB%E9%80%9F%E6%81%A2%E5%A4%8D%E6%88%91%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%9A%84/"/>
+    <id>http://www.yookbu.xyz/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%EF%BC%8C%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E6%A0%B7%E5%BF%AB%E9%80%9F%E6%81%A2%E5%A4%8D%E6%88%91%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%9A%84/</id>
+    <published>2020-03-03T10:17:55.699Z</published>
+    <updated>2020-03-03T10:17:55.699Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Mysql安装报错“找不到msvcp.140.dll”</title>
