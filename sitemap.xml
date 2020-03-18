@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yookbu.xyz/%E5%A3%81%E7%BA%B8/index.html</loc>
+    
+    <lastmod>2020-03-18T13:37:16.198Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yookbu.xyz/picture/index.html</loc>
+    
+    <lastmod>2020-03-18T13:28:49.762Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yookbu.xyz/photo/index.html</loc>
+    
+    <lastmod>2020-03-18T13:15:43.729Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.yookbu.xyz/Windows%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEMysql/</loc>
     
     <lastmod>2020-03-18T09:36:32.617Z</lastmod>
@@ -54,13 +75,6 @@
     <loc>http://www.yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2020-03-18T09:18:24.705Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yookbu.xyz/photo/index.html</loc>
-    
-    <lastmod>2020-03-18T06:59:14.342Z</lastmod>
     
   </url>
   
