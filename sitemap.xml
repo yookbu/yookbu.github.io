@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yookbu.xyz/love/index.html</loc>
+    
+    <lastmod>2020-03-19T14:05:36.543Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.yookbu.xyz/link/index.html</loc>
     
     <lastmod>2020-03-19T10:59:29.520Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>http://www.yookbu.xyz/html%E4%B8%8Ehtm%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
     
     <lastmod>2020-02-19T08:11:05.038Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yookbu.xyz/love/index.html</loc>
-    
-    <lastmod>2020-02-18T13:43:47.774Z</lastmod>
     
   </url>
   
