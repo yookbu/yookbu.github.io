@@ -392,6 +392,30 @@
   </entry>
   
   <entry>
+    <title>Windows+hexo+github打造你的个人博客</title>
+    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-02-03T15:29:56.000Z</published>
+    <updated>2020-03-18T09:18:30.738Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="windows-hexo-github打造你的个人博客"><a href="#windows-hexo-github打造你的个人博客" class="headerlink" title="windows+hexo+github打造你的个人博客"></a>windows+hexo+github打造你的个人博客</h3><h4 id="1：安装并配置node-js-git"><a href="#1：安装并配置node-js-git" class="headerlink" title="1：安装并配置node.js+git"></a>1：<strong>安装并配置node.js+git</strong></h4><p>​      点击<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>下载并安装，（git下载很慢，可以去<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像站下载</a>）</p><h4 id="2：配置环境变量"><a href="#2：配置环境变量" class="headerlink" title="2：配置环境变量"></a>2：<strong>配置环境变量</strong></h4><p>​      在node.js的安装目录下新建两个文件夹 【node_global】及【node_cache】 打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">prefix</span> <span class="string">"F:\nodejs\node_global"</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">cache</span> <span class="string">"F:\nodejs\node_cache"</span></span><br></pre></td></tr></table></figure><p>​      右键点击&gt;我的电脑 &gt;属性&gt;右侧高级系统设置&gt;环境变量&gt;用户变量中找到Path ,双击&gt;新建&gt;输入node.js的安装目录，默认C:\Program Files\node.js &gt;在新建一个，输入 F:\nodejs\node_global ，确定后，在系统变量里新建&gt;变量名NODE_PATH，变量值还是node.js的安装目录</p><p>然后点击确定，记住，<strong>系统属性的确定也要点击</strong></p><p>配置完成后，打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">-v</span></span><br><span class="line"><span class="string">node</span> <span class="string">-v</span></span><br><span class="line"><span class="comment">#正常输出版本号，即为环境变量无误</span></span><br></pre></td></tr></table></figure><h4 id="3安装并配置hexo"><a href="#3安装并配置hexo" class="headerlink" title="3安装并配置hexo"></a><strong>3安装并配置hexo</strong></h4><p>新建hexo文件夹，在该文件下，右键选择<code>Git Bash Here</code></p><p>切换国内rpm镜像源 </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">"[https://registry.npm.taobao.org]</span></span><br></pre></td></tr></table></figure><p> 接着输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure><p>然后打开hexo\node_modules\.bin,将这个路径添加到系统变量的Path变量里，保存</p><p><strong>初始化hexo</strong></p><p>新建一个blog文件夹，在该文件夹内，右键选择Git Bash Here</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$hexo</span> <span class="string">init</span> <span class="comment">#初始化hexo</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="comment">#构建静态页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="comment">#运行本地hexo服务</span></span><br></pre></td></tr></table></figure><p>这时，在本地浏览器打开<a href="localhost:4000">localhost:4000</a>,即可访问hexo主页</p><p>至此，hexo本地搭建已完毕，喝杯可乐庆祝一下吧✌</p><p>接下来博客上服务器，以及个性化主题，参见我的另一篇帖子</p><p><a href="https://yookbu.github.io/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Mac系统下搭建hexo博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;windows-hexo-github打造你的个人博客&quot;&gt;&lt;a href=&quot;#windows-hexo-github打造你的个人博客&quot; class=&quot;headerlink&quot; title=&quot;windows+hexo+github打造你的个人博客&quot;&gt;&lt;/a&gt;windo
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python里list，set，dict和tuple</title>
     <link href="http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/"/>
     <id>http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/</id>
@@ -436,30 +460,6 @@
     
     
       <category term="python" scheme="http://www.yookbu.xyz/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows+hexo+github打造你的个人博客</title>
-    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <published>2020-02-03T15:29:56.000Z</published>
-    <updated>2020-03-18T09:18:30.738Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="windows-hexo-github打造你的个人博客"><a href="#windows-hexo-github打造你的个人博客" class="headerlink" title="windows+hexo+github打造你的个人博客"></a>windows+hexo+github打造你的个人博客</h3><h4 id="1：安装并配置node-js-git"><a href="#1：安装并配置node-js-git" class="headerlink" title="1：安装并配置node.js+git"></a>1：<strong>安装并配置node.js+git</strong></h4><p>​      点击<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>下载并安装，（git下载很慢，可以去<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像站下载</a>）</p><h4 id="2：配置环境变量"><a href="#2：配置环境变量" class="headerlink" title="2：配置环境变量"></a>2：<strong>配置环境变量</strong></h4><p>​      在node.js的安装目录下新建两个文件夹 【node_global】及【node_cache】 打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">prefix</span> <span class="string">"F:\nodejs\node_global"</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">cache</span> <span class="string">"F:\nodejs\node_cache"</span></span><br></pre></td></tr></table></figure><p>​      右键点击&gt;我的电脑 &gt;属性&gt;右侧高级系统设置&gt;环境变量&gt;用户变量中找到Path ,双击&gt;新建&gt;输入node.js的安装目录，默认C:\Program Files\node.js &gt;在新建一个，输入 F:\nodejs\node_global ，确定后，在系统变量里新建&gt;变量名NODE_PATH，变量值还是node.js的安装目录</p><p>然后点击确定，记住，<strong>系统属性的确定也要点击</strong></p><p>配置完成后，打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">-v</span></span><br><span class="line"><span class="string">node</span> <span class="string">-v</span></span><br><span class="line"><span class="comment">#正常输出版本号，即为环境变量无误</span></span><br></pre></td></tr></table></figure><h4 id="3安装并配置hexo"><a href="#3安装并配置hexo" class="headerlink" title="3安装并配置hexo"></a><strong>3安装并配置hexo</strong></h4><p>新建hexo文件夹，在该文件下，右键选择<code>Git Bash Here</code></p><p>切换国内rpm镜像源 </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">"[https://registry.npm.taobao.org]</span></span><br></pre></td></tr></table></figure><p> 接着输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure><p>然后打开hexo\node_modules\.bin,将这个路径添加到系统变量的Path变量里，保存</p><p><strong>初始化hexo</strong></p><p>新建一个blog文件夹，在该文件夹内，右键选择Git Bash Here</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$hexo</span> <span class="string">init</span> <span class="comment">#初始化hexo</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="comment">#构建静态页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="comment">#运行本地hexo服务</span></span><br></pre></td></tr></table></figure><p>这时，在本地浏览器打开<a href="localhost:4000">localhost:4000</a>,即可访问hexo主页</p><p>至此，hexo本地搭建已完毕，喝杯可乐庆祝一下吧✌</p><p>接下来博客上服务器，以及个性化主题，参见我的另一篇帖子</p><p><a href="https://yookbu.github.io/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Mac系统下搭建hexo博客</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;windows-hexo-github打造你的个人博客&quot;&gt;&lt;a href=&quot;#windows-hexo-github打造你的个人博客&quot; class=&quot;headerlink&quot; title=&quot;windows+hexo+github打造你的个人博客&quot;&gt;&lt;/a&gt;windo
-      
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
     
   </entry>
   
