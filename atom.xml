@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yookbu.xyz/"/>
-  <updated>2020-03-24T13:56:35.985Z</updated>
+  <updated>2020-03-30T07:33:11.536Z</updated>
   <id>http://www.yookbu.xyz/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.yookbu.xyz/%C2%96%C2%96%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/"/>
     <id>http://www.yookbu.xyz/%C2%96%C2%96%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/</id>
     <published>2020-03-24T12:47:04.000Z</published>
-    <updated>2020-03-24T13:56:35.985Z</updated>
+    <updated>2020-03-30T07:33:11.536Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>动态规划</strong>(dynamic programming)是<strong>运筹学</strong>的一个分支，是求解<strong>决策过程</strong>(decision process)<strong>最优化</strong>的数学方法。 </p><p>​                                                                                                                                                –<a href="https://baike.baidu.com/item/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/529408?fromtitle=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95&fromid=15742703&fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>动态规划</strong>(dynamic programming)是<strong>运筹学</strong>的一个分支，是求解<strong>决策过程</strong>(decision process)<strong>最优化</strong>的数学方法。 </p><p>​                                                                                                                                                –<a href="https://baike.baidu.com/item/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/529408?fromtitle=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95&fromid=15742703&fr=aladdin" target="_blank" rel="noopener">百度百科</a></p><p><strong><em>动态规划的核心思想其实就是分冶法（把原问题划分为子问题在求解）</em></strong></p><p>动态规划与分冶法的区别： 适合于用动态规划法求解的问题，经分解后得到的子问题往往不是互相独立的（即下一个子阶段的求解是建立在上一个子阶段的解的基础上，进行进一步的求解</p><h3 id="引例"><a href="#引例" class="headerlink" title="引例"></a>引例</h3><p>（参考自百家号作者《<a href="https://baijiahao.baidu.com/s?id=1631319141857419948&wfr=spider&for=pc" target="_blank" rel="noopener">沙茶碎碎念</a>》）</p><p>什么问题适合用动态规划呢？我们通过一个现实中的例子，来理解这个问题。大家可能在公司里面都有一定的组织架构，可能有高级经理、经理、总监、组长然后才是小开发，今天我们通过这个例子，来讲讲什么问题适合使用动态规划。又到了一年一度的考核季，公司要挑选出三个最优秀的员工。一般高级经理会跟手下的经理说，你去把你们那边最优秀的3个人报给我，经理又跟总监说你把你们那边最优秀的人报给我，经理又跟组长说，你把你们组最优秀的三个人报给我，这个其实就动态规划的思想！</p><p><img src="/" alt="img" class="lazyload" data-src="https://pics5.baidu.com/feed/f7246b600c338744878ab9e6d9576afdd62aa0be.jpeg?token=a83a99692bd4b0a82b8f9b5b88d9ee72&s=082C7C327513C9CC087561CA0000A0B1"></p><p><strong>重叠子问题</strong></p><p>不同的问题，可能都要求1个相同问题的解。假如A经理想知道他下面最优秀的人是谁，他必须知道X,Y,Z,O,P组最优秀的人是谁， 甲总监想知道自己下面最优秀的人是谁，也要去知道X,Y,Z组里面最优秀的人是谁？这就有问题重叠了，两个人都需要了解X,Y,Z三个小组最优秀的人。</p><p><strong>最优子结构</strong></p><p>最优解肯定是有最优的子解转移推导而来，子解必定也是子问题的最优解。甲总监下面最优秀的3个人肯定是从X,Y,Z提交上来的3份名单中选择最优秀的三个人。例如Q哥是X组长下面的第5名，那么他肯定不可能是甲总监下面最优秀的三个。</p><p><strong>无后效性</strong></p><p>这个问题可能比较难理解，也就是求出来的子问题并不会因为后面求出来的改变。我们可以理解为，X组长挑选出三个人，即便到了高级经理选出大部门最优秀的三个人，对于X组来说，最优秀的还是这3个人，不会发生改变。</p><h3 id="解题过程"><a href="#解题过程" class="headerlink" title="解题过程"></a>解题过程</h3><p>动态规划问题，大致可以通过以下四部进行解决。</p><h4 id="1-划分状态"><a href="#1-划分状态" class="headerlink" title="1.划分状态"></a>1.划分状态</h4><p>即划分子问题，例如上面的例子，我们可以认为每个组下面、每个部门、每个中心下面最优秀的3个人，都是全公司最优秀的3个人的子问题</p><h4 id="2-状态表示"><a href="#2-状态表示" class="headerlink" title="2.状态表示"></a>2.状态表示</h4><p>即如何让计算机理解子问题。上述例子，我们可以实用f[i][3]表示第i个人，他手下最优秀的3个人是谁。</p><h4 id="3-状态转移"><a href="#3-状态转移" class="headerlink" title="3.状态转移"></a>3.状态转移</h4><p>即父问题是如何由子问题推导出来的。上述例子，每个人大Leader下面最优秀的人等于他下面的小Leader中最优秀的人中最优秀的几个。</p><h4 id="4-确定边界"><a href="#4-确定边界" class="headerlink" title="4.确定边界"></a>4.确定边界</h4><p>确定初始状态是什么？最小的子问题？最终状态又是什么。例如上述问题，最小的子问题就是每个小组长下面最优秀的人，最终状态是整个企业，初始状态为每个领导下面都没有最优名单，但是小组长下面拥有每个人的评分。</p><h3 id="动态规划题目特点"><a href="#动态规划题目特点" class="headerlink" title="动态规划题目特点"></a>动态规划题目特点</h3><h4 id="1，计数"><a href="#1，计数" class="headerlink" title="1，计数"></a>1，计数</h4><p> 举例：有多少种方式走到右下角</p><p>​            有多少种方法选出k个数使得和是Sum</p><h4 id="2，求最大值最小值"><a href="#2，求最大值最小值" class="headerlink" title="2，求最大值最小值"></a>2，求最大值最小值</h4><p>举例： 从左上角走到右下角路径的最大数字之和</p><p>​            最长上升子序列</p><h4 id="3，求存在性"><a href="#3，求存在性" class="headerlink" title="3，求存在性"></a>3，求存在性</h4><p>举例：取石子游戏，先手是否获胜</p><pre><code>能不能选出k个数使得和为Sum</code></pre>]]></content>
     
     <summary type="html">
     
@@ -392,6 +392,30 @@
   </entry>
   
   <entry>
+    <title>Windows+hexo+github打造你的个人博客</title>
+    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-02-03T15:29:56.000Z</published>
+    <updated>2020-03-18T09:18:30.738Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="windows-hexo-github打造你的个人博客"><a href="#windows-hexo-github打造你的个人博客" class="headerlink" title="windows+hexo+github打造你的个人博客"></a>windows+hexo+github打造你的个人博客</h3><h4 id="1：安装并配置node-js-git"><a href="#1：安装并配置node-js-git" class="headerlink" title="1：安装并配置node.js+git"></a>1：<strong>安装并配置node.js+git</strong></h4><p>​      点击<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>下载并安装，（git下载很慢，可以去<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像站下载</a>）</p><h4 id="2：配置环境变量"><a href="#2：配置环境变量" class="headerlink" title="2：配置环境变量"></a>2：<strong>配置环境变量</strong></h4><p>​      在node.js的安装目录下新建两个文件夹 【node_global】及【node_cache】 打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">prefix</span> <span class="string">"F:\nodejs\node_global"</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">cache</span> <span class="string">"F:\nodejs\node_cache"</span></span><br></pre></td></tr></table></figure><p>​      右键点击&gt;我的电脑 &gt;属性&gt;右侧高级系统设置&gt;环境变量&gt;用户变量中找到Path ,双击&gt;新建&gt;输入node.js的安装目录，默认C:\Program Files\node.js &gt;在新建一个，输入 F:\nodejs\node_global ，确定后，在系统变量里新建&gt;变量名NODE_PATH，变量值还是node.js的安装目录</p><p>然后点击确定，记住，<strong>系统属性的确定也要点击</strong></p><p>配置完成后，打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">-v</span></span><br><span class="line"><span class="string">node</span> <span class="string">-v</span></span><br><span class="line"><span class="comment">#正常输出版本号，即为环境变量无误</span></span><br></pre></td></tr></table></figure><h4 id="3安装并配置hexo"><a href="#3安装并配置hexo" class="headerlink" title="3安装并配置hexo"></a><strong>3安装并配置hexo</strong></h4><p>新建hexo文件夹，在该文件下，右键选择<code>Git Bash Here</code></p><p>切换国内rpm镜像源 </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">"[https://registry.npm.taobao.org]</span></span><br></pre></td></tr></table></figure><p> 接着输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure><p>然后打开hexo\node_modules\.bin,将这个路径添加到系统变量的Path变量里，保存</p><p><strong>初始化hexo</strong></p><p>新建一个blog文件夹，在该文件夹内，右键选择Git Bash Here</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$hexo</span> <span class="string">init</span> <span class="comment">#初始化hexo</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="comment">#构建静态页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="comment">#运行本地hexo服务</span></span><br></pre></td></tr></table></figure><p>这时，在本地浏览器打开<a href="localhost:4000">localhost:4000</a>,即可访问hexo主页</p><p>至此，hexo本地搭建已完毕，喝杯可乐庆祝一下吧✌</p><p>接下来博客上服务器，以及个性化主题，参见我的另一篇帖子</p><p><a href="https://yookbu.github.io/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Mac系统下搭建hexo博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;windows-hexo-github打造你的个人博客&quot;&gt;&lt;a href=&quot;#windows-hexo-github打造你的个人博客&quot; class=&quot;headerlink&quot; title=&quot;windows+hexo+github打造你的个人博客&quot;&gt;&lt;/a&gt;windo
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python里list，set，dict和tuple</title>
     <link href="http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/"/>
     <id>http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/</id>
@@ -436,30 +460,6 @@
     
     
       <category term="python" scheme="http://www.yookbu.xyz/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows+hexo+github打造你的个人博客</title>
-    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <published>2020-02-03T15:29:56.000Z</published>
-    <updated>2020-03-18T09:18:30.738Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="windows-hexo-github打造你的个人博客"><a href="#windows-hexo-github打造你的个人博客" class="headerlink" title="windows+hexo+github打造你的个人博客"></a>windows+hexo+github打造你的个人博客</h3><h4 id="1：安装并配置node-js-git"><a href="#1：安装并配置node-js-git" class="headerlink" title="1：安装并配置node.js+git"></a>1：<strong>安装并配置node.js+git</strong></h4><p>​      点击<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>下载并安装，（git下载很慢，可以去<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像站下载</a>）</p><h4 id="2：配置环境变量"><a href="#2：配置环境变量" class="headerlink" title="2：配置环境变量"></a>2：<strong>配置环境变量</strong></h4><p>​      在node.js的安装目录下新建两个文件夹 【node_global】及【node_cache】 打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">prefix</span> <span class="string">"F:\nodejs\node_global"</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">cache</span> <span class="string">"F:\nodejs\node_cache"</span></span><br></pre></td></tr></table></figure><p>​      右键点击&gt;我的电脑 &gt;属性&gt;右侧高级系统设置&gt;环境变量&gt;用户变量中找到Path ,双击&gt;新建&gt;输入node.js的安装目录，默认C:\Program Files\node.js &gt;在新建一个，输入 F:\nodejs\node_global ，确定后，在系统变量里新建&gt;变量名NODE_PATH，变量值还是node.js的安装目录</p><p>然后点击确定，记住，<strong>系统属性的确定也要点击</strong></p><p>配置完成后，打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">-v</span></span><br><span class="line"><span class="string">node</span> <span class="string">-v</span></span><br><span class="line"><span class="comment">#正常输出版本号，即为环境变量无误</span></span><br></pre></td></tr></table></figure><h4 id="3安装并配置hexo"><a href="#3安装并配置hexo" class="headerlink" title="3安装并配置hexo"></a><strong>3安装并配置hexo</strong></h4><p>新建hexo文件夹，在该文件下，右键选择<code>Git Bash Here</code></p><p>切换国内rpm镜像源 </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">"[https://registry.npm.taobao.org]</span></span><br></pre></td></tr></table></figure><p> 接着输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure><p>然后打开hexo\node_modules\.bin,将这个路径添加到系统变量的Path变量里，保存</p><p><strong>初始化hexo</strong></p><p>新建一个blog文件夹，在该文件夹内，右键选择Git Bash Here</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$hexo</span> <span class="string">init</span> <span class="comment">#初始化hexo</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="comment">#构建静态页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="comment">#运行本地hexo服务</span></span><br></pre></td></tr></table></figure><p>这时，在本地浏览器打开<a href="localhost:4000">localhost:4000</a>,即可访问hexo主页</p><p>至此，hexo本地搭建已完毕，喝杯可乐庆祝一下吧✌</p><p>接下来博客上服务器，以及个性化主题，参见我的另一篇帖子</p><p><a href="https://yookbu.github.io/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Mac系统下搭建hexo博客</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;windows-hexo-github打造你的个人博客&quot;&gt;&lt;a href=&quot;#windows-hexo-github打造你的个人博客&quot; class=&quot;headerlink&quot; title=&quot;windows+hexo+github打造你的个人博客&quot;&gt;&lt;/a&gt;windo
-      
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
     
   </entry>
   
