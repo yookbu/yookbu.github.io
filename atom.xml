@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yookbu.xyz/"/>
-  <updated>2020-03-30T17:21:23.962Z</updated>
+  <updated>2020-04-05T10:58:32.481Z</updated>
   <id>http://www.yookbu.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次Win10转移到win7</title>
+    <link href="http://www.yookbu.xyz/%E8%AE%B0%E4%B8%80%E6%AC%A1win10%E8%BD%AC%E7%A7%BB%E5%88%B0win7/"/>
+    <id>http://www.yookbu.xyz/%E8%AE%B0%E4%B8%80%E6%AC%A1win10%E8%BD%AC%E7%A7%BB%E5%88%B0win7/</id>
+    <published>2020-04-05T01:25:40.000Z</published>
+    <updated>2020-04-05T10:58:32.481Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="记一次win10转移到win7"><a href="#记一次win10转移到win7" class="headerlink" title="记一次win10转移到win7"></a>记一次win10转移到win7</h3><ol><li>下载windows7镜像，（MSDN/俄罗斯大神）</li><li>下载<a href="http://www.drivergenius.com/wangka/" target="_blank" rel="noopener">万能网卡驱动离线版</a>放在电脑的非系统盘里（除C盘外）</li><li>做pe启动盘（<a href="https://yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">教程</a>）（可以用<a href="https://itsinghua-my.sharepoint.com/personal/a14_n58u_com/_layouts/15/download.aspx?share=Eb8hga4vRyZNvveCszO0yn4BQ1H2yWNo3oENzJSkY1wpuQ&ext=.exe" target="_blank" rel="noopener">Firpe</a>，带上网功能，容易翻车的可以用这个）</li><li>安装时，先用diskgenius把系统盘格式化，然后把gpt分区转为MBR分区</li><li>安装系统，安装结束后，再用diskgenius重建MBR缓存</li><li>重启PE，进入Bios，把Boot选项设置为 Legacy 和 Legacy First 保存，退出Bios</li><li>开机，等待安装系统（强烈建议关闭Windows更新）</li><li>进入桌面，由于原版系统无驱动（比如USB，显卡，网卡等）先安装第二步下载的万能网卡驱动，装上驱动后，联网，更新驱动</li><li>安装<a href="https://dotnet.microsoft.com/download/dotnet-framework" target="_blank" rel="noopener">.net framework4.8</a>（很多程序都需要这个玩意）</li><li>如果你玩联盟之类的游戏闪退时，大概率<a href="https://www.microsoft.com/en-us/download/details.aspx?id=35&irgwc=1&OCID=AID2000142_aff_7593_1239139&tduid=(ir__noe3ztbqz9kftzsskk0sohzize2xnzdpwdqrzsgv00)(7593)(1239139)(DLButton)(directx)&irclickid=_noe3ztbqz9kftzsskk0sohzize2xnzdpwdqrzsgv00" target="_blank" rel="noopener">DirectX</a>出问题了，下载安装即可</li><li>后续调教就自行摸索了。</li></ol><p><strong>交作业</strong></p><p><img src="/" alt="" class="lazyload" data-src="http://blog.yookbu.xyz/20200405185813.png"></p><p>终！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;记一次win10转移到win7&quot;&gt;&lt;a href=&quot;#记一次win10转移到win7&quot; class=&quot;headerlink&quot; title=&quot;记一次win10转移到win7&quot;&gt;&lt;/a&gt;记一次win10转移到win7&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载windows7镜像
+      
+    
+    </summary>
+    
+    
+    
+      <category term="系统重装" scheme="http://www.yookbu.xyz/tags/%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode-62-不同路径</title>
@@ -201,9 +226,9 @@
     <link href="http://www.yookbu.xyz/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%EF%BC%8C%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E6%A0%B7%E5%BF%AB%E9%80%9F%E6%81%A2%E5%A4%8D%E6%88%91%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%9A%84/"/>
     <id>http://www.yookbu.xyz/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%EF%BC%8C%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E6%A0%B7%E5%BF%AB%E9%80%9F%E6%81%A2%E5%A4%8D%E6%88%91%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%9A%84/</id>
     <published>2020-03-03T04:13:14.000Z</published>
-    <updated>2020-03-18T09:27:15.914Z</updated>
+    <updated>2020-04-09T11:33:17.560Z</updated>
     
-    <content type="html"><![CDATA[<p>以前重装系统没有什么感觉，得益于我从不在C盘装软件（除非强制，无法更改），每次装完，甚至大部分应用都还可以正常使用，除了一些安装时在C盘放有注册表的应用，我需要再次重新下载安装，</p><p>这次电脑崩溃我还没有意识到问题的严重性，直到我使用<code>hexo g</code>时，我大叫一声shit！！！</p><p>​                                                              </p><p>​                                            华丽的分割线</p><p>==========================================================</p><h4 id="一：本地重装node-js-amp-amp-git"><a href="#一：本地重装node-js-amp-amp-git" class="headerlink" title="一：本地重装node.js &amp;&amp;git"></a>一：本地重装node.js &amp;&amp;git</h4><p>​            装完之后，再去配置环境变量，令一篇文章有记录，此处不再重复。 （<a href="http://yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#1%EF%BC%9A%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEnode-js-git" target="_blank" rel="noopener">点此查阅</a>）</p><h4 id="二：配置hexo"><a href="#二：配置hexo" class="headerlink" title="二：配置hexo"></a>二：配置hexo</h4><p>​            幸好我的hexo和博客目录都不在C盘，所以才能幸免遇难，打开hexo的目录bin目录，把该路径添加到系统环境变量里的PATH变量下。（我的bin目录是这样  E:\hexo\node_modules.bin）</p><h4 id="三：配置密钥"><a href="#三：配置密钥" class="headerlink" title="三：配置密钥"></a>三：配置密钥</h4><h5 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h5><p>打开C:\Users\用户名，看是否有.shh目录，如果没有，则打开CMD，输入</p><p><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></p><p>连续回车即可（中途是给密钥设置密码的步骤，若需要，则自行设置）</p><p>!:<img src=http://blog.yookbu.xyz/20200303191605.png></p><h5 id="3-2"><a href="#3-2" class="headerlink" title="3.2"></a>3.2</h5><p>打开C:\Users\用户名\.ssh目录,将id_rsa.pub用记事本打开，Ctrl+A复制全部文本，</p><p>若是博客托管在github上，则把复制的公钥，添加到GitHub上即可</p><p>若是自己的服务器，则在服务器的配置公钥的位置上把原来的公钥删除，配置上新的即可</p><p>至此，全剧终(●ˇ∀ˇ●)</p><p>Enjoy <del>~</del></p>]]></content>
+    <content type="html"><![CDATA[<p>以前重装系统没有什么感觉，得益于我从不在C盘装软件（除非强制，无法更改），每次装完，甚至大部分应用都还可以正常使用，除了一些安装时在C盘放有注册表的应用，我需要再次重新下载安装，</p><p>这次电脑崩溃我还没有意识到问题的严重性，直到我使用<code>hexo g</code>时，我大叫一声shit！！！</p><p>​                                                              </p><p>​                                            华丽的分割线</p><p>==========================================================</p><h4 id="一：本地重装node-js-amp-amp-git"><a href="#一：本地重装node-js-amp-amp-git" class="headerlink" title="一：本地重装node.js &amp;&amp;git"></a>一：本地重装node.js &amp;&amp;git</h4><p>​            装完之后，再去配置环境变量，令一篇文章有记录，此处不再重复。 （<a href="http://yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#1%EF%BC%9A%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEnode-js-git" target="_blank" rel="noopener">点此查阅</a>）</p><h4 id="二：配置hexo"><a href="#二：配置hexo" class="headerlink" title="二：配置hexo"></a>二：配置hexo</h4><p>​            幸好我的hexo和博客目录都不在C盘，所以才能幸免遇难，打开hexo的目录bin目录，把该路径添加到系统环境变量里的PATH变量下。（我的bin目录是这样 E:\hexo\node_modules\.bin）</p><h4 id="三：配置密钥"><a href="#三：配置密钥" class="headerlink" title="三：配置密钥"></a>三：配置密钥</h4><h5 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h5><p>打开C:\Users\用户名，看是否有.shh目录，如果没有，则打开CMD，输入</p><p><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></p><p>连续回车即可（中途是给密钥设置密码的步骤，若需要，则自行设置）</p><p>!:<img src=http://blog.yookbu.xyz/20200303191605.png></p><h5 id="3-2"><a href="#3-2" class="headerlink" title="3.2"></a>3.2</h5><p>打开C:\Users\用户名\.ssh目录,将id_rsa.pub用记事本打开，Ctrl+A复制全部文本，</p><p>若是博客托管在github上，则把复制的公钥，添加到GitHub上即可</p><p>若是自己的服务器，则在服务器的配置公钥的位置上把原来的公钥删除，配置上新的即可</p><p>至此，全剧终(●ˇ∀ˇ●)</p><p>Enjoy <del>~</del></p>]]></content>
     
     <summary type="html">
     
@@ -299,7 +324,7 @@
     <link href="http://www.yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     <id>http://www.yookbu.xyz/windows%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/</id>
     <published>2020-02-14T00:38:25.000Z</published>
-    <updated>2020-02-17T10:13:42.263Z</updated>
+    <updated>2020-04-05T10:20:44.184Z</updated>
     
     <content type="html"><![CDATA[<h4 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a><strong>前期准备</strong></h4><p>1 检查你的系统是家庭版还是专业版。</p><p>  点击开始菜单，找到‘“设置”，然后选择’系统“，划到最下面，点击”关于“，划    到最下面可以看到windows规格，是家庭版还是专业版。</p><p>2 一个最少8G的U盘</p><p>3 下载PE工具箱·</p><p>  制作PE启动盘后以后将能一盘多用，例如维护，修复系统呀，系统崩溃后还   原数据呀等等</p><p>  在此推荐一款良心PE工具“微PE”，没有强制设置主页、捆绑安装行为等其它   流氓行为。</p><p>  地址：<a href="http://www.wepe.com.cn" target="_blank" rel="noopener">http://www.wepe.com.cn</a></p><p>4下载系统镜像</p><p>  再推荐一个良心镜像下载站点“MSDN，我告诉你”，个人性质的原版软件信息   收录站点</p><p>  地址：<a href="https://msdn.itellyou.cn" target="_blank" rel="noopener">https://msdn.itellyou.cn</a></p><h4 id="镜像下载"><a href="#镜像下载" class="headerlink" title="镜像下载"></a>镜像下载</h4><p>在“MSDN，我告诉你“找到自己需要的版本，这里以最新的1803版为例。是否为最新的系统可以通过发布时间来判断，版本的话我们选择consumer editions就好。注意区分x86和x64,现在的电脑大多数都是基于x64位处理器的啦，我们选择x64的。然后打开迅雷或其他下载工具，复制红框里的链接，下载就Ok啦。 </p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641172043_6C8C943C35341DCEE320604C1B9DC9B2"> </p><h4 id="制作PE启动盘"><a href="#制作PE启动盘" class="headerlink" title="制作PE启动盘"></a>制作PE启动盘</h4><p>注意此操作会清除U盘所有数据，请提前做好数据备份。</p><p>下载完”微PE“后，双击运行，选择安装到U盘。 </p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641565783_AA8EA6DDAEE9B0D61A9D996833FDF111"> </p><p>然后按图示操作，其中U盘名字什么的，看你个人喜欢，格式建议NTFS。特别注意箭头标示的地方。</p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641700406_BC1C82EEB650F1E4D7ED4CD7CB56F6B2"> </p><p>然后等待安装完成就行了。这时候再回头打开你的U盘，把下载好的镜像复制进去。</p><p>咦？怎么出现了2个可移动设备？一个是你的U盘，另一个是EFI，大家不必惊慌 。</p><p>平常使用存放就还用原先那个，EFI分区忽略就好……其实在win10 1703版之前EFI分区是隐藏的，但升级之后就出现了，目前还没有完全隐藏的完美解决方案…</p><h4 id="笔记本设置U盘启动"><a href="#笔记本设置U盘启动" class="headerlink" title="笔记本设置U盘启动"></a>笔记本设置U盘启动</h4><p>对于常见的品牌电脑，我们可以直接在开机时按下快捷启动键，选择U盘设备。</p><p>以下为戴尔的操作实例：</p><p>  1 将U盘插入电脑，开机</p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641758784_CE80A24694E5C6A9B29278F699CA0234"> </p><p> 2 在电脑启动的时候(如上图界面)连续按下键盘上的”F12”键，进入启动菜单，如下图，选择”USB Storage Device”选项。 </p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641781516_3922DCDAE96B0D7B6D0726D2F9122695"></p><p>在此附一张常见设备快捷启动按键</p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641936628_B747F8C9EB814DC306DC6F5C7B3E44B0"> </p><p>如果没有你的设备你也不要担心,下面再以小米笔记本为例,向大展示如何设置U盘启动</p><p>1 打开小米笔记本Pro笔记本并在logo出现的瞬间按下快捷键【F2】进入bios设   置，选择boot菜单，在boot菜单下选择第三项“Boot Devices Order”将usb-     hdd 设为第一启动，如下图所示：</p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641962741_B8CFF03E10695CCFDA8A5F866FEBAB81"> </p><p>2 选择好之后，在exit选项卡选择第一项，“保存设置并退出”，如下图所示： </p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581641991494_08FA50F25B2CE8C8C0829D169D613DBF"> </p><p>如果还没看懂，没关系！打开百度，搜索“你的电脑品牌+设置U盘启动”，例如“联想笔记本 U盘启动”</p><h4 id="进PE重装"><a href="#进PE重装" class="headerlink" title="进PE重装"></a>进PE重装</h4><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581642033553_9A60A80471CB26F375144718279ACB04"></p><p>这就是进入PE后的桌面。</p><p>打开桌面上第二个‘CGI备份还原’</p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581642101335_4C7207D14BC314A14508232D156142BA"> </p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581643909876_E69610E0B865937DCBDA97FB5367CD48"> </p><p>核对一下1，2，一般情况下系统应该自动给你选好了。我们只需要在3的位置选择你下载的系统镜像。</p><p>然后自动跳出让你选择系统，这时我们选择Home家庭版。现在大多数电脑预装的都是win10家庭版，并且在同一版本下win10是可以自动联网激活的。比如原先你是正版win10家庭版，重装家庭版后联网自动激活仍是正版，但是你装专业版就不行了。其实，对普通用户来说，家庭版足矣。</p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581643931907_F3F599709E9300911A013FFFE2114FF9"> </p><p>确定执行后，接下来会提示是否修复引导或者格式化，这两个勾都勾上，勾上后点确定继续 </p><p><img src="/" alt="图片说明" title="图片标题" class="lazyload" data-src="https://uploadfiles.nowcoder.com/images/20200214/3142203_1581643954473_C840B14832D5BF934EE66405655F11B9"> </p><p>接下来耐心等待系统镜像还原，机械硬盘大概需要15分钟以上，固态最快几分钟</p><p>现在你可以玩会手机静静等待安装完成。完成后重启时拔下U盘。</p><p>当看到熟悉的壁纸和桌面图标时，证明你已经成功了！</p>]]></content>
     
@@ -444,30 +469,6 @@
   </entry>
   
   <entry>
-    <title>Windows+hexo+github打造你的个人博客</title>
-    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <published>2020-02-03T15:29:56.000Z</published>
-    <updated>2020-03-18T09:18:30.738Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="windows-hexo-github打造你的个人博客"><a href="#windows-hexo-github打造你的个人博客" class="headerlink" title="windows+hexo+github打造你的个人博客"></a>windows+hexo+github打造你的个人博客</h3><h4 id="1：安装并配置node-js-git"><a href="#1：安装并配置node-js-git" class="headerlink" title="1：安装并配置node.js+git"></a>1：<strong>安装并配置node.js+git</strong></h4><p>​      点击<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>下载并安装，（git下载很慢，可以去<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像站下载</a>）</p><h4 id="2：配置环境变量"><a href="#2：配置环境变量" class="headerlink" title="2：配置环境变量"></a>2：<strong>配置环境变量</strong></h4><p>​      在node.js的安装目录下新建两个文件夹 【node_global】及【node_cache】 打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">prefix</span> <span class="string">"F:\nodejs\node_global"</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">cache</span> <span class="string">"F:\nodejs\node_cache"</span></span><br></pre></td></tr></table></figure><p>​      右键点击&gt;我的电脑 &gt;属性&gt;右侧高级系统设置&gt;环境变量&gt;用户变量中找到Path ,双击&gt;新建&gt;输入node.js的安装目录，默认C:\Program Files\node.js &gt;在新建一个，输入 F:\nodejs\node_global ，确定后，在系统变量里新建&gt;变量名NODE_PATH，变量值还是node.js的安装目录</p><p>然后点击确定，记住，<strong>系统属性的确定也要点击</strong></p><p>配置完成后，打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">-v</span></span><br><span class="line"><span class="string">node</span> <span class="string">-v</span></span><br><span class="line"><span class="comment">#正常输出版本号，即为环境变量无误</span></span><br></pre></td></tr></table></figure><h4 id="3安装并配置hexo"><a href="#3安装并配置hexo" class="headerlink" title="3安装并配置hexo"></a><strong>3安装并配置hexo</strong></h4><p>新建hexo文件夹，在该文件下，右键选择<code>Git Bash Here</code></p><p>切换国内rpm镜像源 </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">"[https://registry.npm.taobao.org]</span></span><br></pre></td></tr></table></figure><p> 接着输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure><p>然后打开hexo\node_modules\.bin,将这个路径添加到系统变量的Path变量里，保存</p><p><strong>初始化hexo</strong></p><p>新建一个blog文件夹，在该文件夹内，右键选择Git Bash Here</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$hexo</span> <span class="string">init</span> <span class="comment">#初始化hexo</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="comment">#构建静态页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="comment">#运行本地hexo服务</span></span><br></pre></td></tr></table></figure><p>这时，在本地浏览器打开<a href="localhost:4000">localhost:4000</a>,即可访问hexo主页</p><p>至此，hexo本地搭建已完毕，喝杯可乐庆祝一下吧✌</p><p>接下来博客上服务器，以及个性化主题，参见我的另一篇帖子</p><p><a href="https://yookbu.github.io/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Mac系统下搭建hexo博客</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;windows-hexo-github打造你的个人博客&quot;&gt;&lt;a href=&quot;#windows-hexo-github打造你的个人博客&quot; class=&quot;headerlink&quot; title=&quot;windows+hexo+github打造你的个人博客&quot;&gt;&lt;/a&gt;windo
-      
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python里list，set，dict和tuple</title>
     <link href="http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/"/>
     <id>http://www.yookbu.xyz/python%E9%87%8Clist%EF%BC%8Cset%EF%BC%8Cdict%E5%92%8Ctuple/</id>
@@ -516,6 +517,30 @@
   </entry>
   
   <entry>
+    <title>Windows+hexo+github打造你的个人博客</title>
+    <link href="http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.yookbu.xyz/windows+hexo+github%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-02-03T15:29:56.000Z</published>
+    <updated>2020-03-18T09:18:30.738Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="windows-hexo-github打造你的个人博客"><a href="#windows-hexo-github打造你的个人博客" class="headerlink" title="windows+hexo+github打造你的个人博客"></a>windows+hexo+github打造你的个人博客</h3><h4 id="1：安装并配置node-js-git"><a href="#1：安装并配置node-js-git" class="headerlink" title="1：安装并配置node.js+git"></a>1：<strong>安装并配置node.js+git</strong></h4><p>​      点击<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>下载并安装，（git下载很慢，可以去<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像站下载</a>）</p><h4 id="2：配置环境变量"><a href="#2：配置环境变量" class="headerlink" title="2：配置环境变量"></a>2：<strong>配置环境变量</strong></h4><p>​      在node.js的安装目录下新建两个文件夹 【node_global】及【node_cache】 打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">prefix</span> <span class="string">"F:\nodejs\node_global"</span></span><br><span class="line"><span class="string">npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">cache</span> <span class="string">"F:\nodejs\node_cache"</span></span><br></pre></td></tr></table></figure><p>​      右键点击&gt;我的电脑 &gt;属性&gt;右侧高级系统设置&gt;环境变量&gt;用户变量中找到Path ,双击&gt;新建&gt;输入node.js的安装目录，默认C:\Program Files\node.js &gt;在新建一个，输入 F:\nodejs\node_global ，确定后，在系统变量里新建&gt;变量名NODE_PATH，变量值还是node.js的安装目录</p><p>然后点击确定，记住，<strong>系统属性的确定也要点击</strong></p><p>配置完成后，打开CMD，输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">-v</span></span><br><span class="line"><span class="string">node</span> <span class="string">-v</span></span><br><span class="line"><span class="comment">#正常输出版本号，即为环境变量无误</span></span><br></pre></td></tr></table></figure><h4 id="3安装并配置hexo"><a href="#3安装并配置hexo" class="headerlink" title="3安装并配置hexo"></a><strong>3安装并配置hexo</strong></h4><p>新建hexo文件夹，在该文件下，右键选择<code>Git Bash Here</code></p><p>切换国内rpm镜像源 </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`npm</span> <span class="string">config</span> <span class="string">set</span> <span class="string">registry</span> <span class="string">"[https://registry.npm.taobao.org]</span></span><br></pre></td></tr></table></figure><p> 接着输入</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure><p>然后打开hexo\node_modules\.bin,将这个路径添加到系统变量的Path变量里，保存</p><p><strong>初始化hexo</strong></p><p>新建一个blog文件夹，在该文件夹内，右键选择Git Bash Here</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$hexo</span> <span class="string">init</span> <span class="comment">#初始化hexo</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="comment">#构建静态页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="comment">#运行本地hexo服务</span></span><br></pre></td></tr></table></figure><p>这时，在本地浏览器打开<a href="localhost:4000">localhost:4000</a>,即可访问hexo主页</p><p>至此，hexo本地搭建已完毕，喝杯可乐庆祝一下吧✌</p><p>接下来博客上服务器，以及个性化主题，参见我的另一篇帖子</p><p><a href="https://yookbu.github.io/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Mac系统下搭建hexo博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;windows-hexo-github打造你的个人博客&quot;&gt;&lt;a href=&quot;#windows-hexo-github打造你的个人博客&quot; class=&quot;headerlink&quot; title=&quot;windows+hexo+github打造你的个人博客&quot;&gt;&lt;/a&gt;windo
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python-从入门到精通</title>
     <link href="http://www.yookbu.xyz/python-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/"/>
     <id>http://www.yookbu.xyz/python-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</id>
@@ -540,6 +565,30 @@
   </entry>
   
   <entry>
+    <title>Mac删除. .. .DS_Store文件且永不再生成</title>
+    <link href="http://www.yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/"/>
+    <id>http://www.yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/</id>
+    <published>2019-11-02T07:33:47.000Z</published>
+    <updated>2020-02-17T10:14:32.297Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="mac删除-DS-Store文件且永不再生成"><a href="#mac删除-DS-Store文件且永不再生成" class="headerlink" title="mac删除. .. .DS_Store文件且永不再生成"></a>mac删除. .. .DS_Store文件且永不再生成</h4><h5 id="1删除"><a href="#1删除" class="headerlink" title="1删除"></a>1删除</h5><p>打开终端输入</p><p><code>find . -name .DS_Store -type f -delete ; find . -type d | xargs dot_clean</code> </p><h5 id="2禁止生成"><a href="#2禁止生成" class="headerlink" title="2禁止生成"></a>2禁止生成</h5><p>defaults write com.apple.desktopservices DSDontWriteNetworkStores <code>true</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;mac删除-DS-Store文件且永不再生成&quot;&gt;&lt;a href=&quot;#mac删除-DS-Store文件且永不再生成&quot; class=&quot;headerlink&quot; title=&quot;mac删除. .. .DS_Store文件且永不再生成&quot;&gt;&lt;/a&gt;mac删除. .. .DS_S
+      
+    
+    </summary>
+    
+    
+    
+      <category term="mac" scheme="http://www.yookbu.xyz/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac系统下搭建hexo博客</title>
     <link href="http://www.yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/"/>
     <id>http://www.yookbu.xyz/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</id>
@@ -559,9 +608,9 @@
     
     
     
-      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
-    
       <category term="mac" scheme="http://www.yookbu.xyz/tags/mac/"/>
+    
+      <category term="hexo" scheme="http://www.yookbu.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -586,30 +635,6 @@
     
     
       <category term="linux" scheme="http://www.yookbu.xyz/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac删除. .. .DS_Store文件且永不再生成</title>
-    <link href="http://www.yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/"/>
-    <id>http://www.yookbu.xyz/mac%E5%88%A0%E9%99%A4.%20..%20.DS_Store%E6%96%87%E4%BB%B6%E4%B8%94%E6%B0%B8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%88%90/</id>
-    <published>2019-11-02T07:33:47.000Z</published>
-    <updated>2020-02-17T10:14:32.297Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="mac删除-DS-Store文件且永不再生成"><a href="#mac删除-DS-Store文件且永不再生成" class="headerlink" title="mac删除. .. .DS_Store文件且永不再生成"></a>mac删除. .. .DS_Store文件且永不再生成</h4><h5 id="1删除"><a href="#1删除" class="headerlink" title="1删除"></a>1删除</h5><p>打开终端输入</p><p><code>find . -name .DS_Store -type f -delete ; find . -type d | xargs dot_clean</code> </p><h5 id="2禁止生成"><a href="#2禁止生成" class="headerlink" title="2禁止生成"></a>2禁止生成</h5><p>defaults write com.apple.desktopservices DSDontWriteNetworkStores <code>true</code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;mac删除-DS-Store文件且永不再生成&quot;&gt;&lt;a href=&quot;#mac删除-DS-Store文件且永不再生成&quot; class=&quot;headerlink&quot; title=&quot;mac删除. .. .DS_Store文件且永不再生成&quot;&gt;&lt;/a&gt;mac删除. .. .DS_S
-      
-    
-    </summary>
-    
-    
-    
-      <category term="mac" scheme="http://www.yookbu.xyz/tags/mac/"/>
     
   </entry>
   
