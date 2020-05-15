@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yookbu.xyz/"/>
-  <updated>2020-05-02T14:55:58.328Z</updated>
+  <updated>2020-05-15T03:42:15.613Z</updated>
   <id>http://www.yookbu.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git相关命令记录</title>
+    <link href="http://www.yookbu.xyz/2020-05-15-Git%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/"/>
+    <id>http://www.yookbu.xyz/2020-05-15-Git%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-05-15T03:35:40.000Z</published>
+    <updated>2020-05-15T03:42:15.613Z</updated>
+    
+    <content type="html"><![CDATA[<p>1:下载安装Git</p><p>2：在自己本地建立文件夹，进入，鼠标右击选择</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">Git</span> <span class="keyword">Bash </span>Here</span><br></pre></td></tr></table></figure><p>3:克隆项目</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//第一种方法：git <span class="keyword">clone</span> <span class="title">仓库地址</span></span><br><span class="line"><span class="title">git</span> <span class="keyword">clone</span> <span class="title">http</span>://<span class="number">39.98</span>.<span class="number">59.185</span>:<span class="number">3000</span>/qluedu/objdetection.git//需要在弹出的页面里输入用户名：qluedu 密码：qluedu</span><br><span class="line">//第二种方法：git <span class="keyword">clone</span> <span class="title">用户名:密码@仓库地址</span></span><br><span class="line"><span class="title">git</span> <span class="keyword">clone</span> <span class="title">qluedu</span>:qluedu@http://<span class="number">39.98</span>.<span class="number">59.185</span>:<span class="number">3000</span>/qluedu/objdetection.git</span><br></pre></td></tr></table></figure><p>4:初始化本地仓库</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure><p>5：建立自己的分支</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">branch </span>分支名</span><br></pre></td></tr></table></figure><p>6：切换分支</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> checkout 分支名</span><br></pre></td></tr></table></figure><h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><p>1：添加文件到当前分支的暂存区</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add 文档<span class="number">1</span> 文档<span class="number">2</span></span><br></pre></td></tr></table></figure><p>2：添加当前目录所用文档到暂存区，包括子目录</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> .</span></span><br></pre></td></tr></table></figure><p>3：删除工作区文件，并且将这次删除放入暂存区</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm 文档<span class="number">1</span> 文档<span class="number">2</span></span><br></pre></td></tr></table></figure><h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><p>1：提交代码到仓库（从暂存区到仓库区）</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">commit</span> -m //也可以简写为 git <span class="keyword">commit</span></span><br></pre></td></tr></table></figure><p>2：提交暂存区的指定文件到仓库区</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">git</span> <span class="selector-tag">commit</span> <span class="selector-attr">[file1]</span> <span class="selector-attr">[file2]</span> ... <span class="selector-tag">-m</span></span><br></pre></td></tr></table></figure><p>3：提交时显示所有的diff信息</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git commit -v</span></span><br></pre></td></tr></table></figure><h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p>1：列出所有本地分支</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git branch</span><br></pre></td></tr></table></figure><p>2：列出所有远程分支</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">branch </span>-r</span><br></pre></td></tr></table></figure><p>3：列出所有本地分支和远程分支</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">branch </span>-a</span><br></pre></td></tr></table></figure><p>4：新建一个分支，但依然停留在当前分支</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> branch<span class="meta"> [branch-name]</span></span><br></pre></td></tr></table></figure><p>5：新建一个分支，并切换到该分支</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> checkout -b<span class="meta"> [branch]</span></span><br></pre></td></tr></table></figure><p>6：切换到上一个分支</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> checkout -</span><br></pre></td></tr></table></figure><p>7：删除分支</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> branch -d<span class="meta"> [branch-name]</span></span><br></pre></td></tr></table></figure><p>8：删除远程分支</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">push </span>origin --delete [<span class="keyword">branch-name]</span></span><br><span class="line"><span class="keyword">git </span><span class="keyword">branch </span>-dr [remote/<span class="keyword">branch]</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1:下载安装Git&lt;/p&gt;
+&lt;p&gt;2：在自己本地建立文件夹，进入，鼠标右击选择&lt;/p&gt;
+&lt;figure class=&quot;highlight armasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/spa
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="http://www.yookbu.xyz/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://www.yookbu.xyz/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode-面试题55-二叉树的深度</title>
